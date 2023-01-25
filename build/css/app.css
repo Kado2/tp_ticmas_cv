@@ -406,33 +406,39 @@ img {
 }
 .contenedor-barra ul {
   list-style: none;
-  padding: 0;
   margin-right: 2rem;
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  box-shadow: 1rem -2rem #406E8E;
+  background-color: #FFFFFF;
 }
 .contenedor-barra ul li a {
   color: inherit;
   text-decoration: none;
+  color: #04080f;
+  padding: 1rem;
   display: block;
   text-transform: uppercase;
   font-weight: 700;
 }
 .contenedor-barra ul li a:hover {
-  color: #406E8E;
+  background-color: #04080f;
+  color: #FFFFFF;
 }
 
 .contenedor_grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-}
-.contenedor_grid ul {
   list-style-type: none;
 }
 
 .item_info {
   margin: 3rem 0;
+}
+
+.izq_info {
+  border: 1rem solid #406E8E;
 }
 
 .der_info {
