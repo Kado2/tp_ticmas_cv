@@ -362,14 +362,32 @@ img {
 
 .header {
   text-align: center;
+  border-bottom: 0.5rem #7e8e96 groove;
 }
 .header h1 {
-  margin: 4rem auto;
-  padding-bottom: 4rem;
   font-size: 6rem;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 400;
-  border-bottom: 0.5rem #7e8e96 groove;
+}
+.header h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem 0 3rem 0;
+}
+
+.header_presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header_presentacion-pic {
+  margin: 4rem auto 2rem auto;
+  max-width: 100%;
+  width: auto;
+  border-radius: 70%;
+  border: 0.5rem #406E8E groove;
 }
 
 .contenedor-barra {
