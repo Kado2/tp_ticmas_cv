@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+
+.contenedor_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    ul {
+        list-style-type: none;
+    }
+}
+.item_info {
+    margin : 3rem 0;
+}
+.der_info {
+    margin-left: 12rem;
+}

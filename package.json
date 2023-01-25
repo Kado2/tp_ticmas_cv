@@ -1,0 +1,19 @@
+{
+  "name": "tp_ticmas_cv",
+  "version": "1.0.0",
+  "description": "CV en HTML con CSS y JS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "author": "Agustin Guerra",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
+}

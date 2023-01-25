@@ -14,14 +14,19 @@
 <body>
     <header class="header">
         <nav class="contenedor-barra">
-            <h3 class="logo">Clifford White <span><p><.Lic/Administración></p></span></h3>
+            <div class="nav_logo">
+                <picture>
+                    <img class="nav_logo-pic" src="build/img/61.jpg" alt="foto perfil de persona">
+                </picture>
+                <h3>Clifford White</h3>
+            </div>
             <ul>
                 <li><a href="#">Formación</a></li>
                 <li><a href="#">Experiencia</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav> <!--Final barra de navegacion-->
-        <div class="header_presentacion">
+        <div class="contenedor header_presentacion">
             <picture>
                 <img class="header_presentacion-pic" src="build/img/61.jpg" alt="foto perfil de persona">
             </picture>
@@ -32,24 +37,89 @@
     <main class="contenedor">
         <div class="contenedor_grid">
             <div class="izq_info">
-                <ul class="izq_info-contacto">
+                <ul class="izq_info-aside">
                     <li>
                         <h3 class="item_info">Información de contacto</h3>
-                        <ul>
-                            <li class="email"><p>clifford.white@example.com</p></li>
-                            <li class="direccion"><p>1835 Mcclellan Rd</p></li>
-                            <li class="telefono"><p>(790) 343-8484</p></li>
+                        <ul class="izq_info_contacto">
+                            <li class="izq_info_contacto-item">
+                                <div class="izq_info_contacto-iconos">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                                        <polyline points="3 7 12 13 21 7" />
+                                      </svg>
+                                </div>
+                                <p> <span></span>clifford.white@example.com</p>
+                            </li>
+                            <li class="izq_info_contacto-item">
+                                <div class="izq_info_contacto-iconos">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <circle cx="12" cy="11" r="3" />
+                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                      </svg>
+                                </div>
+                                <p>1835 Mcclellan Rd</p>
+                            </li>
+                            <li class="izq_info_contacto-item">
+                                <div class="izq_info_contacto-iconos">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                        <path d="M15 7a2 2 0 0 1 2 2" />
+                                        <path d="M15 3a6 6 0 0 1 6 6" />
+                                      </svg>
+                                </div>
+                                <p>(790) 343-8484</p>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> <!--Fin informacion de contacto-->
+                    <li class="izq_info_sobremi">
                         <h3 class="item_info">Sobre Mí</h3>
-                    </li>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos nobis veniam hic magnam natus esse atque facere obcaecati aspernatur vero expedita, corrupti veritatis odio ab animi tempore? Facilis, est eum?</p>
+                    </li><!--Fin Sobre mi-->
                     <li>
                         <h3 class="item_info">Idiomas</h3>
-                    </li>
+                        <div class="izq_info_idiomas-grid">
+                            <div class="izq_info_idiomas-iconos">
+                                <p>Español</p>
+                                <img class="icono" src="build/img/ar.svg" alt="imagen de bandera argentina">
+                            </div>
+                            <div class="izq_info_idiomas-iconos">
+                                <p>Portugués</p>
+                                <img class="icono" src="build/img/br.svg" alt="imagen de bandera argentina">
+                            </div>
+                            <div class="izq_info_idiomas-iconos">
+                                <p>Inglés</p>
+                                <img class="icono" src="build/img/gb.svg" alt="imagen de bandera argentina">
+                            </div>
+                            <div class="izq_info_idiomas-iconos">
+                                <p>Francés</p>
+                                <img class="icono" src="build/img/fr.svg" alt="imagen de bandera argentina">
+                            </div>
+                        </div>
+                    </li> <!--Fin Idiomas-->
                     <li>
-                        <h3 class="item_info">Enlaces</h3>
-                    </li>
+                        <h3 class="item_info">Redes Sociales</h3>
+                        <div class="izq_info_social-iconos">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                              </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="8" y1="11" x2="8" y2="16" />
+                                <line x1="8" y1="8" x2="8" y2="8.01" />
+                                <line x1="12" y1="16" x2="12" y2="11" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                              </svg></a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                              </svg></a>
+                        </div>
+                    </li> <!--Fin Enlaces-->
                 </ul>
             </div>
             <div class="der_info">
@@ -96,7 +166,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> <!--Fin grid-->
     </main>
 </body>
 </html>

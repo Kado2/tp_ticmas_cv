@@ -1,4 +1,43 @@
 @use 'base/variables' as v;
 .izq_info {
     border: 1rem solid v.$azul;
+    .item_info {
+        text-align: center;
+    }
+    h3 {
+        margin: 2rem 0;
+    }
+    .izq_info-aside {
+        padding: 0 2rem;
+    }
+}
+.izq_info_contacto{
+    padding: 0 1rem;
+}
+.izq_info_contacto-item {
+    display: flex;
+    justify-content: flex-start;
+}
+.izq_info_contacto-iconos {
+    margin: 1rem;
+}
+.izq_info_sobremi{
+    text-align: center;
+}
+.izq_info_idiomas-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.izq_info_idiomas-iconos{
+    width: 7rem;
+    justify-items: center;
+    margin: 0 auto;
+    .icono {
+        width: 10rem;
+        height: 5rem;
+    }
+}
+.izq_info_social-iconos{
+    display: flex;
+    justify-content: space-evenly;
 }

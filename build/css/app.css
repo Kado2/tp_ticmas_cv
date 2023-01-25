@@ -53,7 +53,6 @@ img {
 
 .header {
   text-align: center;
-  border-bottom: 0.5rem #406E8E groove;
 }
 .header h1 {
   font-size: 6rem;
@@ -71,6 +70,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 0.5rem #406E8E groove;
 }
 
 .header_presentacion-pic {
@@ -88,12 +88,23 @@ img {
   background-color: #04080f;
   color: #FFFFFF;
 }
-.contenedor-barra .logo {
-  margin: 2rem 2rem;
+.contenedor-barra .nav_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
-.contenedor-barra .logo span p {
-  display: inline;
-  color: inherit;
+.contenedor-barra .nav_logo h3 {
+  margin: 0;
+  font-weight: 700;
+}
+.contenedor-barra .nav_logo-pic {
+  display: inline-block;
+  margin: 0 2rem;
+  max-width: 100%;
+  width: 5rem;
+  border-radius: 70%;
+  border: 0.2rem #406E8E solid;
 }
 .contenedor-barra ul {
   list-style: none;
@@ -101,7 +112,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  box-shadow: 1rem -2rem #406E8E;
+  box-shadow: 1rem -1.2rem #406E8E;
   background-color: #FFFFFF;
 }
 .contenedor-barra ul li a {
@@ -136,4 +147,50 @@ img {
 
 .izq_info {
   border: 1rem solid #406E8E;
+}
+.izq_info .item_info {
+  text-align: center;
+}
+.izq_info h3 {
+  margin: 2rem 0;
+}
+.izq_info .izq_info-aside {
+  padding: 0 2rem;
+}
+
+.izq_info_contacto {
+  padding: 0 1rem;
+}
+
+.izq_info_contacto-item {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.izq_info_contacto-iconos {
+  margin: 1rem;
+}
+
+.izq_info_sobremi {
+  text-align: center;
+}
+
+.izq_info_idiomas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.izq_info_idiomas-iconos {
+  width: 7rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+.izq_info_idiomas-iconos .icono {
+  width: 10rem;
+  height: 5rem;
+}
+
+.izq_info_social-iconos {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -1,0 +1,76 @@
+@use 'base/variables' as v;
+.header {
+    text-align: center;
+
+    h1 {
+        font-size: 6rem;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin: 1rem 0 3rem 0;
+    }
+}
+.header_presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 0.5rem v.$azul groove;
+}
+.header_presentacion-pic {
+    margin: 4rem auto 2rem auto;
+    max-width: 100%;
+    width: auto;
+    border-radius: 70%;
+    border: 0.5rem v.$gris groove;
+}
+.contenedor-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: v.$negro;
+    color: v.$blanco;
+    .nav_logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        h3 {
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+    .nav_logo-pic {
+        display: inline-block;
+        margin: 0 2rem;
+        max-width: 100%;
+        width: 5rem;
+        border-radius: 70%;
+        border: 0.2rem v.$azul solid;
+    }
+    ul {
+        list-style: none;
+        margin-right: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        box-shadow: 1rem -1.2rem v.$azul;
+        background-color: v.$blanco;
+        li a{
+            color: inherit;
+            text-decoration: none;
+            color: v.$negro;
+            padding: 1rem;
+            display: block;
+            text-transform: uppercase;
+            font-weight: 700;
+            &:hover{
+                background-color: v.$negro;
+                color: v.$blanco;
+            }
+        }
+    }
+}
