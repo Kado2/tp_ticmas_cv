@@ -12,15 +12,23 @@
 .li-der-princ {
     margin-bottom: 2.5rem;
     ul {
-        padding: 0 1rem;
+        padding: 1rem 5rem;
     }
 }
 @media (min-width: 768px){
     .der_info-ul{
+        text-align: center;
+    }
+}
+@media (min-width: 992px){
+    .der_info-ul{
         text-align: left;
     }
     .li-der-princ {
-        padding-left: 5rem;
+        padding-left: 9rem;
+        ul{
+            padding: 1rem 2rem;
+        }
     }
 }
 .li-der-princ:last-child {
@@ -41,7 +49,7 @@
     box-shadow: 1rem 1.2rem v.$azul;
     width: 15rem;
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
     .der_i_habilidades{
         grid-template-columns: repeat(3, 1fr);
     }
