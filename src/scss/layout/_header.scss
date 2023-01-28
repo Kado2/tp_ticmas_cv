@@ -1,7 +1,6 @@
 @use 'base/variables' as v;
 .header {
     text-align: center;
-
     h1 {
         font-size: 6rem;
         margin: 0;
@@ -13,20 +12,6 @@
         font-weight: 400;
         margin: 1rem 0 3rem 0;
     }
-}
-.header_presentacion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-right: .18rem solid rgba(0, 0, 0, 0.26);
-    border-left: .18rem solid rgba(0, 0, 0, 0.26);
-}
-.header_presentacion-pic {
-    margin: 4rem auto 2rem auto;
-    max-width: 100%;
-    width: auto;
-    border-radius: 70%;
-    border: 0.5rem v.$gris groove;
 }
 .contenedor-barra {
     display: flex;
@@ -64,7 +49,6 @@
             color: inherit;
             text-decoration: none;
             color: v.$negro;
-            padding: 1rem;
             display: block;
             text-transform: uppercase;
             font-weight: 700;
@@ -74,4 +58,18 @@
             }
         }
     }
+}
+.header_presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: .18rem solid rgba(0, 0, 0, 0.26);
+    border-left: .18rem solid rgba(0, 0, 0, 0.26);
+}
+.header_presentacion-pic {
+    margin: 4rem auto 2rem auto;
+    max-width: 100%;
+    width: auto;
+    border-radius: 70%;
+    border: 0.5rem v.$gris groove;
 }

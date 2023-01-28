@@ -1,4 +1,14 @@
 @use 'base/variables' as v;
+.der_info {
+    padding: 2rem;
+}
+.li-der-princ {
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+}
+.li-der-princ:last-child {
+    margin-bottom: 0;
+}
 .der_i_habilidades{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,7 +17,7 @@
     text-align: left;
 }
 .der_i_habilidades-li{
-    padding: 0;
+    padding: .5rem 1rem;
     border-top: .4rem groove v.$negro;
     border-left: .1rem solid v.$negro;
     box-shadow: 1rem 1.2rem v.$azul;

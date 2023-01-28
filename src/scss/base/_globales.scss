@@ -26,6 +26,7 @@ p {
 }
 a {
     text-decoration: none;
+    padding: 1rem;
 }
 
 h1, h2, h3 {
@@ -45,14 +46,4 @@ img {
     width: 100%;
     height: auto;
     display: block;
-}
-.li-izq-princ {
-    margin-bottom: 3rem;
-}
-.li-der-princ {
-    margin-bottom: 5rem;
-    padding-left: 9rem;
-}
-.li-der-princ:last-child {
-    margin-bottom: 0;
 }
