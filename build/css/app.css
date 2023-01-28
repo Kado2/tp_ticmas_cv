@@ -69,35 +69,17 @@ img {
 
 .contenedor-barra {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   background-color: #04080f;
   color: #FFFFFF;
 }
-.contenedor-barra .nav_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2rem;
-}
-.contenedor-barra .nav_logo h3 {
-  margin: 0;
-  font-weight: 700;
-}
-.contenedor-barra .nav_logo-pic {
-  display: inline-block;
-  margin: 0 2rem;
-  max-width: 100%;
-  width: 5rem;
-  border-radius: 70%;
-  border: 0.2rem #406E8E solid;
-}
 .contenedor-barra ul {
   list-style: none;
-  margin-right: 2rem;
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-left: 1rem;
   box-shadow: 1rem -1.2rem #406E8E;
   background-color: #FFFFFF;
 }
@@ -112,6 +94,40 @@ img {
 .contenedor-barra ul li a:hover {
   background-color: #04080f;
   color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .contenedor-barra {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contenedor-barra ul {
+    margin-right: 2rem;
+    margin-left: 0;
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+.nav_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+.nav_logo h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.nav_logo-pic {
+  display: inline-block;
+  margin: 0 2rem;
+  max-width: 100%;
+  width: 5rem;
+  border-radius: 70%;
+  border: 0.2rem #406E8E solid;
 }
 
 .header_presentacion {
