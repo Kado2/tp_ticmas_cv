@@ -241,20 +241,35 @@ img {
 }
 
 .izq_info_idiomas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
 }
 
 .izq_info_idiomas-iconos {
   width: 7rem;
-  justify-items: center;
-  margin: 2rem auto;
 }
 .izq_info_idiomas-iconos .icono {
   width: 10rem;
   height: 5rem;
 }
 
+@media (min-width: 768px) {
+  .izq_info_idiomas-grid {
+    padding: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .izq_info_idiomas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0 0 5rem;
+  }
+  .izq_info_idiomas-iconos {
+    margin: 2rem;
+  }
+}
 .izq_info_social-iconos {
   margin-top: 2rem;
   display: flex;
@@ -281,7 +296,7 @@ img {
   margin-bottom: 2.5rem;
 }
 .li-der-princ ul {
-  padding: 1rem 5rem;
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
