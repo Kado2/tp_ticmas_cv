@@ -46,3 +46,13 @@ img {
     height: auto;
     display: block;
 }
+.li-izq-princ {
+    margin-bottom: 3rem;
+}
+.li-der-princ {
+    margin-bottom: 5rem;
+    padding-left: 9rem;
+}
+.li-der-princ:last-child {
+    margin-bottom: 0;
+}

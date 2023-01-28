@@ -1,0 +1,15 @@
+@use 'base/variables' as v;
+.der_i_habilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+.der_i_habilidades-li{
+    padding: 0;
+    border-top: .4rem groove v.$negro;
+    border-left: .1rem solid v.$negro;
+    box-shadow: 1rem 1.2rem v.$azul;
+    width: 15rem;
+}

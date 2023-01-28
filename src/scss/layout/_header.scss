@@ -18,7 +18,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 0.5rem v.$azul groove;
+    border-right: .18rem solid rgba(0, 0, 0, 0.26);
+    border-left: .18rem solid rgba(0, 0, 0, 0.26);
 }
 .header_presentacion-pic {
     margin: 4rem auto 2rem auto;

@@ -51,6 +51,19 @@ img {
   display: block;
 }
 
+.li-izq-princ {
+  margin-bottom: 3rem;
+}
+
+.li-der-princ {
+  margin-bottom: 5rem;
+  padding-left: 9rem;
+}
+
+.li-der-princ:last-child {
+  margin-bottom: 0;
+}
+
 .header {
   text-align: center;
 }
@@ -70,7 +83,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 0.5rem #406E8E groove;
+  border-right: 0.18rem solid rgba(0, 0, 0, 0.26);
+  border-left: 0.18rem solid rgba(0, 0, 0, 0.26);
 }
 
 .header_presentacion-pic {
@@ -137,12 +151,20 @@ img {
   list-style-type: none;
 }
 
+.cont_princ {
+  border-top: 0.6rem #406E8E groove;
+  border-right: 0.18rem solid rgba(0, 0, 0, 0.26);
+  border-left: 0.18rem solid rgba(0, 0, 0, 0.26);
+  border-bottom: 0.18rem solid rgba(0, 0, 0, 0.26);
+  margin-bottom: 1rem;
+}
+
 .item_info {
   margin: 3rem 0;
 }
 
 .der_info {
-  margin-left: 12rem;
+  padding-right: 7rem;
 }
 
 .izq_info {
@@ -183,7 +205,7 @@ img {
 .izq_info_idiomas-iconos {
   width: 7rem;
   justify-items: center;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .izq_info_idiomas-iconos .icono {
   width: 10rem;
@@ -193,4 +215,20 @@ img {
 .izq_info_social-iconos {
   display: flex;
   justify-content: space-evenly;
+}
+
+.der_i_habilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.der_i_habilidades-li {
+  padding: 0;
+  border-top: 0.4rem groove #04080f;
+  border-left: 0.1rem solid #04080f;
+  box-shadow: 1rem 1.2rem #406E8E;
+  width: 15rem;
 }

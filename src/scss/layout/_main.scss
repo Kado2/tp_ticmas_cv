@@ -7,9 +7,16 @@
         list-style-type: none;
     }
 }
+.cont_princ {
+    border-top: 0.6rem v.$azul groove;
+    border-right: .18rem solid rgba(0, 0, 0, 0.26);
+    border-left: .18rem solid rgba(0, 0, 0, 0.26);
+    border-bottom: .18rem solid rgba(0, 0, 0, 0.26);
+    margin-bottom: 1rem;
+}
 .item_info {
     margin : 3rem 0;
 }
 .der_info {
-    margin-left: 12rem;
+    padding-right: 7rem;
 }
