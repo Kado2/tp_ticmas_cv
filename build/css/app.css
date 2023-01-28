@@ -146,14 +146,22 @@ img {
   border: 0.5rem #7e8e96 groove;
 }
 
-.contenedor_grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.contenedor_princ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.contenedor_grid ul {
+.contenedor_princ ul {
   list-style-type: none;
 }
 
+@media (min-width: 768px) {
+  .contenedor_princ {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
 .cont_princ {
   border-top: 0.6rem #406E8E groove;
   border-right: 0.18rem solid rgba(0, 0, 0, 0.26);
@@ -164,6 +172,7 @@ img {
 
 .item_info {
   margin: 3rem 0;
+  text-transform: uppercase;
 }
 
 .izq_info {
@@ -212,6 +221,9 @@ img {
 .izq_info_sobremi {
   text-align: center;
 }
+.izq_info_sobremi p {
+  padding: 2rem;
+}
 
 .izq_info_idiomas-grid {
   display: grid;
@@ -239,21 +251,40 @@ img {
 }
 
 .der_info {
-  padding: 2rem;
+  max-width: 100%;
+}
+
+.der_info-ul {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .li-der-princ {
-  margin-bottom: 5rem;
-  padding-left: 5rem;
+  margin-bottom: 2.5rem;
+}
+.li-der-princ ul {
+  padding: 0 1rem;
 }
 
+@media (min-width: 768px) {
+  .der_info-ul {
+    text-align: left;
+  }
+  .li-der-princ {
+    padding-left: 5rem;
+  }
+}
 .li-der-princ:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .der_i_habilidades {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   text-transform: uppercase;
   text-align: left;
@@ -265,4 +296,10 @@ img {
   border-left: 0.1rem solid #04080f;
   box-shadow: 1rem 1.2rem #406E8E;
   width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .der_i_habilidades {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
