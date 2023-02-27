@@ -27,6 +27,9 @@
         margin-left: 1rem;
         box-shadow: 1rem -1.2rem v.$azul;
         background-color: v.$blanco;
+        &.ocultar {
+            display: none;
+        }
         li a{
             color: v.$negro;
             display: block;
@@ -37,6 +40,11 @@
                 color: v.$blanco;
             }
         }
+    }
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 0 2rem 0  v.$gris;
     }
 }
 @media (min-width: 768px){
@@ -50,8 +58,22 @@
             margin-left: 0;
             flex-direction: row;
             gap: 3rem;
+            &.ocultar {
+                display: flex;
+            }
         }
     }
+    .nav-menu {
+        visibility: hidden;
+    }
+}
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+.icono-menu:hover{
+    cursor: pointer;
+    background-color: v.$gris;
 }
 .nav_logo{
     display: flex;

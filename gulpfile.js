@@ -11,10 +11,16 @@ function css(done) {
     done();
 }
 
-function dev(done) {
-    watch('src/scss/**/*.scss', css);
+function js(done) {
+    src('src/js/*.js')
+        .pipe(dest('build/js'))
     done();
 }
-
+function dev(done) {
+    watch('src/scss/**/*.scss', css);
+    watch('src/js/*.js', js);
+    done();
+}
 exports.css = css;
-exports.dev = dev;
+exports.js = js;
+exports.dev = parallel(js, dev);
